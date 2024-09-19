@@ -1,0 +1,34 @@
+.text {
+  color: darkblue;
+  padding: 10px;
+  margin: 10px;
+}
+
+.heading_1 {
+  font-size: 30px;
+  color: burlywood;
+  padding: 15px;
+  margin: 15px;
+}
+
+.heading_2 {
+  font-size: 20px;
+  color: darkgoldenrod;
+  padding: 12px;
+  margin: 12px;
+}
+
+.link {
+  text-decoration: none;
+  color: orange;
+}
+
+.active {
+  color: blueviolet;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
