@@ -24,12 +24,11 @@ export function ToDoList(){
     }
     
     const addToList = () => {
-        // const newTasks = [...tasks, {value, id: crypto.randomUUID()}]; 
         if (value.trim() === ''){
             return;
-        }        
-        // setTasks(newTasks);
-        setTasks([...tasks, value]);
+        }
+        const newTask = { id: crypto.randomUUID(), text: value };       
+        setTasks([...tasks, newTask]);
         setValue('');       
     }
 
@@ -49,7 +48,7 @@ export function ToDoList(){
         />
         <Button variant="contained" onClick={addToList}>Добавить в список</Button>
         <h2>Список дел</h2>
-        <List sx={{ mt: 4 }}>
+        <List sx={{ mt: 4, mb: 4 }}>
             {tasks.map((value, id) => (
                 <ListItem
                 key={id}
@@ -64,31 +63,6 @@ export function ToDoList(){
           ))}
         </List>
       </div>
-        /*<div>
-            <TextField fullWidth
-                variant="outlined"
-                label="Введите новую задачу"
-                onChange={upText}
-                value={value}
-            />
-            <Button variant="contained" onClick={addToList}>Добавить в список</Button>
-            <h2>Список дел</h2>
-            <List sx={{ mt: 4 }}>
-                {messages.map ((value, id) => (
-                    <div className="comment__box">
-                    <ListItem
-                        key={id}
-                        secondaryAction={
-                            <IconButton edge="end" aria-label="delete" onClick={() => delFromList(id)}>
-                                <DeleteIcon />
-                            </IconButton>
-                        }
-                    >
-                    <ListItemText primary={value} />
-                    </ListItem>
-                }
-            </List>
-        </div>*/
     );
 }
 
