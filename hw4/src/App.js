@@ -72,8 +72,8 @@ const App = () => {
         <Route
           path="/text"
           element={
-            <Box customStyle="test">
-              <p className='text'>Текст внутри Box</p>
+            <Box customStyle={s.box}>
+              <p className={s.text}>Текст внутри Box</p>
             </Box>
           }
         />
