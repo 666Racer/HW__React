@@ -9,12 +9,8 @@
   background-color: paleturquoise;
 }
 
-.comment__box{
-  margin-top: 50px;
-  border-bottom: 1px solid midnightblue;
-}
-
 .comment__title{
+  margin-top: 50px;
   font-size: 30px;
   color: darkblue;
   margin-top: 30px;
@@ -22,6 +18,8 @@
 }
 
 .comment__text{
+  margin-top: 50px;
   font-size: 18px;
   color: midnightblue;
+  border-bottom: 1px solid midnightblue;
 }

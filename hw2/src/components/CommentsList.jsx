@@ -14,22 +14,21 @@ function CommentsList() {
         ]);
 
     const delFromList = (id) => {
-        setComments(comments.filter(comment => comment.id != id));
+        setComments(comments.filter(comment => comment.id !== id));
     }
 
     return(
         <div>
-            <ul class="comment__title">Комментарии</ul>
+            <h2 className="comment__title">Комментарии</h2>
+            <ul>
             {comments.length > 0 ?
              comments.map ((comment) =>
-                <div class="comment__box">
-                    <li key={comment.id} class="comment__text">{comment.text}
-                    <p></p>
-                    <button onClick={() => delFromList(comment.id)} class="comment__delButton">Удалить комментарий</button>
-                    </li>
-                </div>) :
+                <li key={comment.id} className="comment__text">{comment.text}
+                    <button onClick={() => delFromList(comment.id)} className="comment__delButton">Удалить комментарий</button>
+                </li>) :
                 <p>Комментариев нет</p>
             }
+            </ul>
         </div>
     );
 }
