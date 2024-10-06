@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import { delProduct, toggleAvailability } from '../redux/slices/productSlice'
-import { ChangeProduct } from "./ChangeProduct";
+import ChangeProduct from "./ChangeProduct";
 
 function ProductList() {
     const products = useSelector((state) => state.products); //
@@ -23,9 +23,6 @@ function ProductList() {
                         <button onClick={() => {
                             dispatch(toggleAvailability(product.id))
                         }}>Изменить доступность</button>    
-                        <button onClick={(handlerClick) => {
-                            dispatch(toggleAvailability(product.id))
-                        }}>Изменить продукт</button>
                         <h4>Update Product</h4>
                         <ChangeProduct productId={product.id} />                           
                     </li>
