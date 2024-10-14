@@ -26,7 +26,7 @@ export function AboutPage() {
     return (
         <div>
             <NavLink to="/">Главная</NavLink>
-            <h1 className={s.heading_1}>О нас</h1>
+            <h1 classNameName={s.heading_1}>О нас</h1>
         </div>
     );
 }

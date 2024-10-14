@@ -3,7 +3,7 @@ import CommentsList from './components/CommentsList';
 
 function App() {
   return (
-    <div className="App">
+    <div classNameName="App">
       <CommentsList/>
     </div>
   );

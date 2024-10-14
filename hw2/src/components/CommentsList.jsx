@@ -19,12 +19,12 @@ function CommentsList() {
 
     return(
         <div>
-            <h2 className="comment__title">Комментарии</h2>
+            <h2 classNameName="comment__title">Комментарии</h2>
             <ul>
             {comments.length > 0 ?
              comments.map ((comment) =>
-                <li key={comment.id} className="comment__text">{comment.text}
-                    <button onClick={() => delFromList(comment.id)} className="comment__delButton">Удалить комментарий</button>
+                <li key={comment.id} classNameName="comment__text">{comment.text}
+                    <button onClick={() => delFromList(comment.id)} classNameName="comment__delButton">Удалить комментарий</button>
                 </li>) :
                 <p>Комментариев нет</p>
             }

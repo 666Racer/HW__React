@@ -19,7 +19,7 @@ function App() {
     dispatch(fetchUser(userId));
   }
   return (
-    <div className="App">
+    <div classNameName="App">
       <h1>Users:</h1>
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error}</p>}

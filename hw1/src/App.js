@@ -3,7 +3,7 @@ import Message from './components/Message';
 
 function App() {
   return (
-    <div className="App">
+    <div classNameName="App">
       <Message text="Первое сообщение"/>
       <Message text="Другое сообщение"/>
     </div>

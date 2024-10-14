@@ -4,9 +4,9 @@
 
 export function Message(props) {
     return(
-        <div class="message">
-        <h2 class="message__title">Сообщение из props:</h2>
-        <p class="message__text">{props.text}</p>
+        <div className="message">
+        <h2 className="message__title">Сообщение из props:</h2>
+        <p className="message__text">{props.text}</p>
         </div>
     )
 }

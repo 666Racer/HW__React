@@ -23,7 +23,7 @@ import ProductList from './components/ProductList';
 function App() {
   return (
     //<Provider store={store}>
-      <div className="App">
+      <div classNameName="App">
         <AddProduct />
         <ProductList />
       </div>

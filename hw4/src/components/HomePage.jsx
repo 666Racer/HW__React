@@ -26,7 +26,7 @@ export function HomePage() {
     return (
         <div>
             <NavLink to="/about">О нас</NavLink>
-            <h1 className={s.heading_1}>Главная страница</h1>
+            <h1 classNameName={s.heading_1}>Главная страница</h1>
         </div>
     );
 }

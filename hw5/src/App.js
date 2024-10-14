@@ -23,7 +23,7 @@ Component: Создайте компонент, который отобража�
 
 function App() {
   return (
-    <div className="App">
+    <div classNameName="App">
     <Provider store={store}>
 			<ThemeProvider>
         <ToggleTheme />

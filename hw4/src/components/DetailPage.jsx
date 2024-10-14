@@ -20,8 +20,8 @@ export function DetailPage({ products }) {
 
     return ( 
         <>
-            <h2 className={s.heading_2}>{product.title}</h2>
-            <p className={s.text}>{product.price}</p>
+            <h2 classNameName={s.heading_2}>{product.title}</h2>
+            <p classNameName={s.text}>{product.price}</p>
         </>
     );
 }

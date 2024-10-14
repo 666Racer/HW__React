@@ -49,20 +49,20 @@ const App = () => {
   };
   return (
     <BrowserRouter>
-      <nav className={s.nav}>
-        <NavLink className={styleActiveLink} to="/">
+      <nav classNameName={s.nav}>
+        <NavLink classNameName={styleActiveLink} to="/">
           Главная
         </NavLink>
-        <NavLink className={styleActiveLink} to="/about">
+        <NavLink classNameName={styleActiveLink} to="/about">
           О нас
         </NavLink>
-        <NavLink className={styleActiveLink} to="/text">
+        <NavLink classNameName={styleActiveLink} to="/text">
           Текст
         </NavLink>
-        <NavLink className={styleActiveLink} to="/arr">
+        <NavLink classNameName={styleActiveLink} to="/arr">
           Пункты
         </NavLink>
-        <NavLink className={styleActiveLink} to="/goods">
+        <NavLink classNameName={styleActiveLink} to="/goods">
           Товары
         </NavLink>
       </nav>
@@ -73,7 +73,7 @@ const App = () => {
           path="/text"
           element={
             <Box customStyle={s.box}>
-              <p className={s.text}>Текст внутри Box</p>
+              <p classNameName={s.text}>Текст внутри Box</p>
             </Box>
           }
         />
