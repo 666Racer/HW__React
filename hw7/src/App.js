@@ -10,7 +10,7 @@ function App() {
   const [userId, setUserId] = useState(null);
   const dispatch = useDispatch();
 
-  useEffect(() => {dispatch(fetchUsers)
+  useEffect(() => {dispatch(fetchUsers())
     }, [dispatch]
   )
 
