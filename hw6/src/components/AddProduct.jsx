@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import addProduct from '../redux/slices/productSlice'
+import { addProduct } from '../redux/slices/productSlice'
 
 const AddProduct = () => {
     const [name, setName] = useState("");

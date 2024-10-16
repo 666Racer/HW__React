@@ -17,17 +17,13 @@
 import './App.css';
 import AddProduct from './components/AddProduct';
 import ProductList from './components/ProductList';
-// import { Provider } from 'react-redux';
-// import store from './redux/store';
 
 function App() {
   return (
-    //<Provider store={store}>
       <div classNameName="App">
         <AddProduct />
         <ProductList />
       </div>
-    //</Provider>
   );
 }
 
