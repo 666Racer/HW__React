@@ -5,7 +5,7 @@ const MiddleContent = () => {
         <div className="middle__content__pic ">
           <img
             className="middle__img "
-            src="../../../../public/img/middle__img.png "
+            src="./img/middle/middle__img.png "
             alt="middle__image.png "
           />
           <div className="middle__content__pic__info ">
@@ -24,7 +24,7 @@ const MiddleContent = () => {
             <div className="middle__content__info__inner-item ">
               <img
                 className="inner-item__icon "
-                src="../../../../public/img/middle_logo_1.png "
+                src="./img/middle/middle_logo_1.png "
                 alt="middle_logo_1.png "
                 width="40 "
                 height="40 "
@@ -40,7 +40,7 @@ const MiddleContent = () => {
             <div className="middle__content__info__inner-item ">
               <img
                 className="inner-item__icon "
-                src="../../../../public/img/middle_logo_2.png "
+                src="./img/middle/middle_logo_2.png "
                 alt="middle_logo_2.png "
                 width="40 "
                 height="40 "
@@ -56,7 +56,7 @@ const MiddleContent = () => {
             <div className="middle__content__info__inner-item ">
               <img
                 className="inner-item__icon "
-                src="../../../../public/img/middle_logo_3.png "
+                src="./img/middle/middle_logo_3.png "
                 alt="middle_logo_3.png "
                 width="40 "
                 height="40 "

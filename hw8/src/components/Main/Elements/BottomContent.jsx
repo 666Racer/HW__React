@@ -4,7 +4,7 @@ const BotttomContent = () => {
       <article className="bottom__subscribe center ">
         <div className="bottom__reviews ">
           <img
-            src="../../../../public/img/bottom_icon.png "
+            src="./img/bottom/bottom_icon.png "
             alt="bottom_icon.png "
             className="reviewer__photo "
           />
@@ -45,7 +45,7 @@ const BotttomContent = () => {
         <div className="bottom__navigation__content center ">
           <div className="bottom__navigation__left-block ">
             <a className="logo-link " href="index.html ">
-              <img src="../../../../public/img/logo.png " alt="logo.png " />
+              <img src="./img/logo.png " alt="logo.png " />
               <p className="logo-text ">
                 BRAN<span className="logo-text logo-text--colored ">D</span>
               </p>

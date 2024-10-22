@@ -19,7 +19,7 @@ const Header = () => {
                 <div className="main-header__header-top">
                     <div className="header-top__left">
                         <a className="logo-link" href="index.html">
-                            <img src="../../public/img/logo.png" alt="logo" />
+                            <img src="./img/logo.png" alt="logo" />
                             <p className="logo-text">
                                 BRAN<span className="logo-text logo-text--colored">D</span>
                             </p>
@@ -107,7 +107,7 @@ const Header = () => {
                                 </label>
                             </form>
                             <button className="search-field__search-button">
-                                <img src="../../public/img/search.png" alt="search" />
+                                <img src="./img/search.png" alt="search" />
                             </button>
                         </div>
                     </div>

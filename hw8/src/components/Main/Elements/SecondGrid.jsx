@@ -1,5 +1,5 @@
 import ProductCards from "./ProductCards";
-import { data } from "../../../../public/data/data.json";
+import { data } from "../../../redux/slices/productSlice";
 
 const SecondGrid = () => {
   return (
@@ -11,6 +11,7 @@ const SecondGrid = () => {
             id={product.id}
             cardLink={product.cardLink}
             img={product.img}
+            addLink={product.addLink}
             title={product.title}
             price={product.price}
             btnText={product.btnText}
@@ -18,6 +19,13 @@ const SecondGrid = () => {
           />
         ))}
       </article>
+      <a className="products__link products__link__button button center " href="Product_catalogue.html">
+        <div className="products__button__wrapper">
+            <p className="products__button__text">Browse All Product</p>
+            <svg xmlns="http://www.w3.org/2000/svg " height="12 " width="15 " viewBox="0 0 448 512 "><path fill="#ffffff "
+                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z "/></svg>
+        </div>
+      </a>
     </section>
   );
 };

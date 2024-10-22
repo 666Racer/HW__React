@@ -1,6 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const url = '../data/data.json';
+const url2 = '../data/dataProducts.json';
+
 
 export async function fetchProducts(url) {
   try {
@@ -19,7 +21,7 @@ function findProductInData(array, productId) {
 
 function haveProductInStore(productId) {
   let isInStore = false;
-  const produstLS = JSON.parse(localStorage.getItem("basket"));
+  const produstLS = JSON.parse(localStorage.getItem("shopping_card"));
   produstLS.forEach(product => {
 
     if (product.id === productId) {
@@ -30,13 +32,14 @@ function haveProductInStore(productId) {
   return isInStore;
 }
 export const data = await fetchProducts(url);
+export const dataProducts = await fetchProducts(url2);
 
 const initialState = {
-  products: JSON.parse(localStorage.getItem("basket") || "[]"),
+  products: JSON.parse(localStorage.getItem("shopping_card") || "[]"),
 };
 
 export const saveToLocalStorage = (products) => {
-  localStorage.setItem("basket", JSON.stringify(products));
+  localStorage.setItem("shopping_card", JSON.stringify(products));
 };
 
 
@@ -45,7 +48,7 @@ const productSlice = createSlice({
   initialState,
   reducers: {
     addProduct: (state, action) => {
-      const newProduct = findProductInData(data, action.payload);
+      const newProduct = findProductInData(dataProducts, action.payload);
       if (haveProductInStore(newProduct.id)) {
         return;
       }
@@ -71,5 +74,5 @@ const productSlice = createSlice({
   },
 });
 
-export const { addProduct, deleteProduct, setQuantity} = productSlice.actions;
+export const { addProduct, deleteProduct, setQuantity } = productSlice.actions;
 export default productSlice.reducer;
