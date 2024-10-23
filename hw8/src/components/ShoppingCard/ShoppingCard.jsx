@@ -1,5 +1,6 @@
 import Arrivals from "../Arrivals";
 import ProductsInCard from "./ProductsInCard";
+import { useSelector } from 'react-redux';
 import { useState, useSelector, useEffect } from "react";
 
 const ShoppingCard = () => {
