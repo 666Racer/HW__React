@@ -145,7 +145,7 @@ const Header = () => {
                                     <h2 className="total-text">$ {sub}</h2>
                                 </div>
                                 <a className="purchase__button" href="./checkout">Checkout</a>
-                                <a className="purchase__button" href="./basket">Go to
+                                <a className="purchase__button" href="./shopping_card">Go to
                                     cart</a>
                             </div>
                         <div className="box__product-cnt" style={products.length != 0 ? null : {display: "none"}} >
