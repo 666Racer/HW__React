@@ -112,54 +112,55 @@ const Header = () => {
                         </div>
                     </div>
 
-                    <svg className="header__basketbutton_basket" xmlns="http://www.w3.org/2000/svg" fill="#222">
-                            <path
-                                d="M3.184 4.364h3.393l4.833 17.455c.138.512.611.867 1.144.867h14.855c.473 0 .887-.276 1.085-.71l5.405-12.411a1.195 1.195 0 0 0-.099-1.123 1.176 1.176 0 0 0-.986-.532H16.4c-.651 0-1.184.532-1.184 1.182 0 .65.533 1.182 1.184 1.182h14.598l-4.38 10.048H13.443L8.609 2.867A1.183 1.183 0 0 0 7.464 2h-4.28C2.533 2 2 2.532 2 3.182c0 .65.533 1.182 1.184 1.182ZM11.429 31a2.684 2.684 0 0 0 2.683-2.68 2.684 2.684 0 0 0-5.365 0A2.684 2.684 0 0 0 11.429 31Zm16.769 0h.197a2.678 2.678 0 0 0 1.835-.926c.473-.532.69-1.222.65-1.95-.098-1.458-1.38-2.581-2.86-2.483-1.48.099-2.584 1.399-2.485 2.857.098 1.399 1.262 2.502 2.663 2.502Z" />
-                    </svg>
                     <div className="header-top__right">
-                        <div className="basket__button">
-                            <div className="basket__button-scroll" 
-
-                            style={products.length < 3 ? null 
-                            : { height: "300px", overflowY: "scroll", scrollbarColor: "#f16d7f #fbfbfb", scrollbarWidth: "thin"}}>
-
-                                {products.length !== 0 ?
-                                    products.map(product =>
-                                        <BasketInHeader key={product.id}
-                                            id={product.id}
-                                            cardLink={product.cardLink}
-                                            img={product.img}
-                                            title={product.title}
-                                            price={product.price}
-                                        />
-                                    )
-                                    : <>
-                                        <h4 className="box__product__name"> ! Your cart is Empty!</h4>
-                                        <br/>
-                                        <div className="box__line"></div>
-                                     </>                       
-                                }
-                                </div>
-                                <div className="total-sum">
-                                    <h2 className="total-text">TOTAL</h2>
-                                    <h2 className="total-text">$ {sub}</h2>
-                                </div>
-                                <a className="purchase__button" href="./checkout">Checkout</a>
-                                <a className="purchase__button" href="./shopping_card">Go to
-                                    cart</a>
-                            </div>
-                        <div className="box__product-cnt" style={products.length != 0 ? null : {display: "none"}} >
-                            <h3 className="box__count">{products.length}</h3>
-                        </div>
-                        {/* <details className="header-top__right-details">
+                        <details class="header-top__right-details">
                             <summary>
-                                <img className="basket__button" src="../../public/img/basket_logo.png" alt="basket" />
-                            </summary>
-                            <div className="purchase__buttons ">
-                            <a className="purchase__button " href="checkout.html " type="button ">Checkout</a>
-                            <a className="purchase__button " href="Shopping_card.html " type="button ">Go to cart</a>
+                                <img class="basket__button" src="./img/basket_logo.png" alt="basket" />
+                            </summary>                        
+                            <div className="basket-box">
+                                <div className="basket-box-scroll" 
+    
+                                style={products.length < 3 ? null 
+                                : { height: "300px", overflowY: "scroll", scrollbarColor: "#f16d7f #fbfbfb", scrollbarWidth: "thin"}}>
+    
+                                    {products.length !== 0 ?
+                                        products.map(product =>
+                                            <BasketInHeader key={product.id}
+                                                id={product.id}
+                                                cardLink={product.cardLink}
+                                                img={product.img}
+                                                title={product.title}
+                                                price={product.price}
+                                            />
+                                        )
+                                        : <>
+                                            <h4 className="purchase__name"> ! Your cart is Empty!</h4>
+                                            <br/>
+                                            <div className="basket-box__line"></div>
+                                         </>                       
+                                    }
+                                    </div>
+                                    <div className="total-sum">
+                                        <h2 className="total-text">TOTAL</h2>
+                                        <h2 className="total-text">${sub}</h2>
+                                    </div>
+                                    <a className="purchase__button" href="./checkout">Checkout</a>
+                                    <a className="purchase__button" href="./shopping_card">Go to
+                                        cart</a>
+                                </div>
+                            <div className="basket-box__product-cnt" style={products.length != 0 ? null : {display: "none"}} >
+                                <h3 className="basket-box__count">{products.length}</h3>
                             </div>
-                        </details> */}
+                            {/* <details className="header-top__right-details">
+                                <summary>
+                                    <img className="basket__button" src="../../public/img/basket_logo.png" alt="basket" />
+                                </summary>
+                                <div className="purchase__buttons ">
+                                <a className="purchase__button " href="checkout.html " type="button ">Checkout</a>
+                                <a className="purchase__button " href="Shopping_card.html " type="button ">Go to cart</a>
+                                </div>
+                            </details> */}
+                        </details>
                         <button className="account__button button ">My Account
                             <i className="fa fa-caret-down fa-caret-down__my-acc-header "></i>
                         </button>
