@@ -251,6 +251,21 @@ body {
         background-color: rgba(237, 237, 237, 0.74);
         margin-bottom: 16px;
     }
+    &__product-cnt {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 8px;
+        background-color: $colorSelectSite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0px;
+        right: 145px;
+    }
+    &__count {
+        font-size: 11px;    
+    }
 }
 
 .total-sum {
