@@ -346,7 +346,26 @@ const Products = () => {
           </div>
           <article class="product__cards">
             <div class="product__cards__content">
-                
+                {filteredProducts.length !== 0 ?
+                    filteredProducts.map(product =>
+                        <ProductCard
+                            key={product.id}
+                            id={product.id}
+                            cardLink={product.cardLink}
+                            img={product.img}
+                            title={product.title}
+                            price={product.price}
+                            quantity={product.quantity}
+                            color={product.color}
+                            shipping={product.shipping}
+                            sizes={product.sizes.join(', ')}
+                            btnText={product.btnText}
+                        />
+                    )
+                    : <>
+                        <h4 className="purchase__name"> ! Storage is Empty !</h4>
+                    </>
+                }
             </div>
           </article>
         </div>
