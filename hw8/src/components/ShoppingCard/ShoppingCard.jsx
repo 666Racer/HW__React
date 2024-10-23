@@ -40,7 +40,7 @@ const ShoppingCard = () => {
               <p className="shopping__title ">ACTION</p>
             </div>
             {products.length !== 0 ? (
-              products.map((product) => (
+              products.map(product => (
                 <ProductsInCard
                   key={product.id}
                   id={product.id}
@@ -53,10 +53,10 @@ const ShoppingCard = () => {
                   shipping={product.shipping}                  
                   sizes={product.sizes.join(", ")}
                 />
-              ))
+              )
             ) : (
               <>
-                <h4 classNameName="box__product-basket">
+                <h4 classNameName="purchase__name">
                   {" "}
                   ! Your cart is Empty, Buy Something Already!
                 </h4>
