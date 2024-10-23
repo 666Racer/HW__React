@@ -241,10 +241,10 @@ body {
     padding: 20px 17px;
     position: absolute;
     background-color: white;
-    top: 80px; //надо править
-    right: 400px; //точно надо править
-    width: 262px;
+    padding-top: 21px;
+    padding-bottom: 20px;
     border-radius: 5px;
+    border: 1px solid $colorSelectSite;
     &__line{
         width: 229px;
         height: 1px;
@@ -572,46 +572,47 @@ body {
     width: $containerWidth;
     margin-bottom: 78px;
     max-width: 1140px;
-    &__content {
-        margin: 0 auto;
-        display: inline-block;
-        text-align: justify;
-        &:after {
-            content: "";
-            display: inline-block;
-            width: 100%;
-        }
-        &__item {
-            display: inline-block;
-            width: 261px;
-            height: 364px;
-            margin-bottom: 59px;
-            position: relative;
-            vertical-align: middle;
-            &:hover {
-                @include hoverForSecondGrid();
+    //На инлайн-блоках почему-то нет gap между товарами - слипаются друг с другом в левой части
+    // &__content {
+    //     margin: 0 auto;
+    //     display: inline-block;
+    //     text-align: justify;
+    //     &:after {
+    //         content: "";
+    //         display: inline-block;
+    //         width: 100%;
+    //     }
+    //     &__item {
+    //         display: inline-block;
+    //         width: 261px;
+    //         height: 364px;
+    //         margin-bottom: 59px;
+    //         position: relative;
+    //         vertical-align: middle;
+    //         &:hover {
+    //             @include hoverForSecondGrid();
+    //         }
+    //         &:nth-child(-n+4) {
+    //             margin-bottom: 91px;
+    //         }
+    //     }
+        &__content {
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding-bottom: 59px;
+            gap: 32px;
+            &__item {
+                width: 261px;
+                height: 364px;
+                margin-bottom: 59px;
+                position: relative;
+                &:hover {
+                    @include hoverForSecondGrid();
+                }
             }
-            &:nth-child(-n+4) {
-                margin-bottom: 91px;
-            }
-        }
-        // &__content {
-        //     margin: 0 auto;
-        //     display: flex;
-        //     justify-content: space-between;
-        //     align-items: center;
-        //     flex-wrap: wrap;
-        //     padding-bottom: 59px;
-        //     gap: 32px;
-        //     &__item {
-        //         width: 261px;
-        //         height: 364px;
-        //         margin-bottom: 59px;
-        //         position: relative;
-        //         &:hover {
-        //             @include hoverForSecondGrid();
-        //         }
-        //     }
     }
 }
 

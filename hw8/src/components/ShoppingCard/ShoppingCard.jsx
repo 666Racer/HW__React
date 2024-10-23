@@ -1,7 +1,7 @@
 import Arrivals from "../Arrivals";
 import ProductsInCard from "./ProductsInCard";
 import { useSelector } from 'react-redux';
-import { useState, useSelector, useEffect } from "react";
+import { useState,  useEffect } from "react";
 
 const ShoppingCard = () => {
   const products = useSelector((state) => state.product.products);
@@ -39,8 +39,8 @@ const ShoppingCard = () => {
               <p className="shopping__title ">Subtotal</p>
               <p className="shopping__title ">ACTION</p>
             </div>
-            {products.length !== 0 ? (
-              products.map(product => (
+            {products.length !== 0 ? 
+              products.map(product =>
                 <ProductsInCard
                   key={product.id}
                   id={product.id}
@@ -54,14 +54,12 @@ const ShoppingCard = () => {
                   sizes={product.sizes.join(", ")}
                 />
               )
-            ) : (
-              <>
-                <h4 classNameName="purchase__name">
-                  {" "}
-                  ! Your cart is Empty, Buy Something Already!
-                </h4>
+              : <>
+                  <h4 className="grand__total">
+                    Your shopping card is empty now!
+                  </h4>
               </>
-            )}
+            }
             <div className="shopping__buttons ">
               <a href="# ">
                 <button className="shopping__button " type="reset ">

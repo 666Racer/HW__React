@@ -18,7 +18,7 @@ const Header = () => {
             <header className="header container center">
                 <div className="main-header__header-top">
                     <div className="header-top__left">
-                        <a className="logo-link" href="index.html">
+                        <a className="logo-link" href="./">
                             <img src="./img/logo.png" alt="logo" />
                             <p className="logo-text">
                                 BRAN<span className="logo-text logo-text--colored">D</span>
@@ -134,7 +134,7 @@ const Header = () => {
                                             />
                                         )
                                         : <>
-                                            <h4 className="purchase__name"> ! Your cart is Empty!</h4>
+                                            <h4 className="total-text"> ! Your cart is Empty!</h4>
                                             <br/>
                                             <div className="basket-box__line"></div>
                                          </>                       
@@ -148,7 +148,7 @@ const Header = () => {
                                     <a className="purchase__button" href="./shopping_card">Go to
                                         cart</a>
                                 </div>
-                            <div className="basket-box__product-cnt" style={products.length != 0 ? null : {display: "none"}} >
+                            <div className="basket-box__product-cnt" style={products.length !== 0 ? null : {display: "none"}} >
                                 <h3 className="basket-box__count">{products.length}</h3>
                             </div>
                             {/* <details className="header-top__right-details">

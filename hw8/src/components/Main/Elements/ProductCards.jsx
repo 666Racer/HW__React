@@ -12,7 +12,7 @@ const ProductCards = ({id, img, title, sizes, cardLink, price, btnText}) => {
     }
 
 	return (
-		<div className="second__grid__content__item " key={id}>
+		<div className="second__grid__content__item" key={id}>
             <a href={cardLink}>
                 <img className="card__img" src={img} alt="product"/>
                 <p className="card__name">{title}</p>

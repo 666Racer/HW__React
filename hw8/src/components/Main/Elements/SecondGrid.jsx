@@ -19,7 +19,7 @@ const SecondGrid = () => {
           />
         ))}
       </article>
-      <a className="products__link products__link__button button center " href="Product_catalogue.html">
+      <a className="products__link products__link__button button center " href="./products">
         <div className="products__button__wrapper">
             <p className="products__button__text">Browse All Product</p>
             <svg xmlns="http://www.w3.org/2000/svg " height="12 " width="15 " viewBox="0 0 448 512 "><path fill="#ffffff "
