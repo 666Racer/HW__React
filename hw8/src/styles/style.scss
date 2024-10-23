@@ -245,6 +245,12 @@ body {
     right: 400px; //точно надо править
     width: 262px;
     border-radius: 5px;
+    &__line{
+        width: 229px;
+        height: 1px;
+        background-color: rgba(237, 237, 237, 0.74);
+        margin-bottom: 16px;
+    }
 }
 
 .total-sum {
