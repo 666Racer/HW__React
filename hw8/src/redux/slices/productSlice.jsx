@@ -21,8 +21,8 @@ function findProductInData(array, productId) {
 
 function haveProductInStore(productId) {
   let isInStore = false;
-  const produstLS = JSON.parse(localStorage.getItem("shopping_card"));
-  produstLS.forEach(product => {
+  const productsLS = JSON.parse(localStorage.getItem("shopping_card"));
+  productsLS.forEach(product => {
 
     if (product.id === productId) {
       isInStore = true;
