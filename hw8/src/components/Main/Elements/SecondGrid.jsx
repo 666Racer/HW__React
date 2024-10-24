@@ -1,11 +1,11 @@
 import ProductCards from "./ProductCards";
-import { data } from "../../../redux/slices/productSlice";
+import { data, dataProducts } from "../../../redux/slices/productSlice";
 
 const SecondGrid = () => {
   return (
     <section className="second__grid center ">
       <article className="second__grid__content">
-        {data.map((product) => (
+        {dataProducts.map((product) => (
           <ProductCards
             key={product.id}
             id={product.id}

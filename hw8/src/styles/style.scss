@@ -219,11 +219,22 @@ body {
         color: #222222;
         margin-bottom: 10px;
     }
-    &__cancel {
-        height: 15px;
-        width: 15px;
-        margin-left: 40px;
+    &__photo {
+        width: 72px;
+        height: 85px;
     }
+    &__cancel{
+        border: none;
+        background-color: #fff;
+        &:hover {
+            opacity: 0.3;
+        }
+        &__img {
+            height: 15px;
+            width: 15px;
+            margin-left: 40px;
+        }
+    } 
 }
 
 .rate-stars {
@@ -261,7 +272,7 @@ body {
         justify-content: center;
         align-items: center;
         top: 0px;
-        right: 145px;
+        right: 14px;
     }
     &__count {
         font-size: 11px;    

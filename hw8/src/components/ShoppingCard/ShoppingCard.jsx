@@ -140,7 +140,7 @@ const ShoppingCard = () => {
                 </button>
               </div>
               <div className="information__box ">
-                <p className="sub__total">Sub total&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{sub}
+                <p className="sub__total">Sub total&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${sub}
                 </p>
                 <h3 className="grand__total ">
                   GRAND TOTAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

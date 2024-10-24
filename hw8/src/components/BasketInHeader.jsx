@@ -9,33 +9,32 @@ const BasketInHeader = ({id, cardLink, img, title, price, quantity, shipping}) =
     }
     
 	return (
-        <div class="basket-box">
-            <div className="container" key={id}>
-                <a href={cardLink}></a>
-                <div className="purchase__product">
-                    <div className="purchase__productImg">
-                        <img className="purchase__photo"src={img} alt="purchase photo"/>
-                    </div>
-                    <div className="purchase__info">
-                        <h3 className="purchase__name">${title}</h3>
-                        <img className="rate-stars" src="../../public/img/stars_rate.png" alt="stars rate"/>
-                        <p className="quantity-info">1 <span
-                                className="quantity-info__x">x</span>
-                                $${price}
-                        </p>
+            <div className="" key={id}>
+                <a href={cardLink}>
+                    <div className="purchase">
+                        <div className="purchase__productImg">
+                            <img className="purchase__photo"src={img} alt="purchase photo"/>
+                        </div>
+                        <div className="purchase__info">
+                            <h3 className="purchase__name">{title}</h3>
+                            <img className="rate-stars" src="./img/stars_rate.png" alt="stars rate"/>
+                            <p className="quantity-info">1 <span
+                                    className="quantity-info"> x </span>
+                                    $${price}
+                            </p>
+                            {/* <div class="total-sum ">
+                                <p class="total-text ">TOTAL</p>
+                                <p class="total-text ">${price * quantity + shipping}</p>
+                            </div> */}
+                        </div>
                         <form>
-                            <button id={id} className="" onClick={handleDelete}>
-                                <img className="purchase__cancel2" src="./img/header/header_box_close.png" alt="close"/>
+                            <button id={id} className="purchase__cancel" onClick={handleDelete}>
+                                <img className="purchase__cancel__img" src="./img/cancel.png" alt="close"/>
                             </button>
-                        </form>
-                        {/* <div class="total-sum ">
-                            <p class="total-text ">TOTAL</p>
-                            <p class="total-text ">${price * quantity + shipping}</p>
-                        </div> */}
+                        </form>                    
                     </div>
-                </div>
+                </a>
             </div>
-        </div>
 	)
 }
 

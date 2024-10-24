@@ -116,12 +116,15 @@ const Header = () => {
                         <details class="header-top__right-details">
                             <summary>
                                 <img class="basket__button" src="./img/basket_logo.png" alt="basket" />
-                            </summary>                        
+                            </summary>
+                            <div className="basket-box__product-cnt" style={products.length !== 0 ? null : {display: "none"}} >
+                                <h3 className="basket-box__count">{products.length}</h3>
+                            </div>                       
                             <div className="basket-box">
                                 <div className="basket-box-scroll" 
     
                                 style={products.length < 3 ? null 
-                                : { height: "300px", overflowY: "scroll", scrollbarColor: "#f16d7f #fbfbfb", scrollbarWidth: "thin"}}>
+                                : { height: "500px", overflowY: "scroll", scrollbarColor: "#f16d7f #fbfbfb", scrollbarWidth: "thin"}}>
     
                                     {products.length !== 0 ?
                                         products.map(product =>
@@ -147,9 +150,6 @@ const Header = () => {
                                     <a className="purchase__button" href="./checkout">Checkout</a>
                                     <a className="purchase__button" href="./shopping_card">Go to
                                         cart</a>
-                                </div>
-                            <div className="basket-box__product-cnt" style={products.length !== 0 ? null : {display: "none"}} >
-                                <h3 className="basket-box__count">{products.length}</h3>
                             </div>
                             {/* <details className="header-top__right-details">
                                 <summary>
