@@ -5,7 +5,7 @@
         "title": "White t-shirt",
         "color": "White",
         "sizes": ["S","M","L","XL","XXL"],
-        "cardLink": "./single"
+        "cardLink": "./single",
         "price": 22,
         "shipping": 5,
         "btnText": "Add to Cart",
