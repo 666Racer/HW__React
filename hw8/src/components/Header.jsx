@@ -12,6 +12,7 @@ const Header = () => {
         sum + product.price, 0));
     } 
     , [products])
+    console.log(products);
     
     return (
         <section className="top">
@@ -124,7 +125,7 @@ const Header = () => {
                                 <div className="basket-box-scroll" 
     
                                 style={products.length < 3 ? null 
-                                : { height: "500px", overflowY: "scroll", scrollbarColor: "#f16d7f #fbfbfb", scrollbarWidth: "thin"}}>
+                                : { height: "450px", overflowY: "scroll", scrollbarColor: "#f16d7f #fbfbfb", scrollbarWidth: "thin"}}>
     
                                     {products.length !== 0 ?
                                         products.map(product =>
